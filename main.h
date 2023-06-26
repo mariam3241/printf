@@ -8,21 +8,21 @@
 
 /**
   * struct format - foramt and pointer to its function
-  * @flag: element
-  * @print_with_format: element
+  * @s: element
+  * @select_format: element
   */
 
 typedef struct format
 {
-	char *flag;
-	int (*print_with_format)();
+char *s;
+int (*select_format)();
 } fmt;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int printf_char(va_list val);
-int printf_string(va_list val);
-int printf_dec(va_list val);
-int printf_int(va_list val);
+int printchar(va_list x);
+int printstr(va_list x);
+int printdeci(va_list x);
+int printint(va_list x);
 
 #endif
