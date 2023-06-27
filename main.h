@@ -24,5 +24,6 @@ int printchar(va_list x);
 int printstr(va_list x);
 int printdeci(va_list x);
 int printint(va_list x);
+int printBinary(va_list x);
 
 #endif
