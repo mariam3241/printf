@@ -8,7 +8,7 @@
 
 int printBinary(va_list x)
 {
-	int value = va_arg(x, int);
+	unsigned int  value = va_arg(x, int);
 	int k = 0;
 	int arr[64] = {0};
 	int index = 0;
@@ -18,10 +18,6 @@ int printBinary(va_list x)
 	{
 		_putchar('0');
 		k++;
-	}
-	else if (value < 0)
-	{
-		_putchar('\n');
 	}
 	else if (value > 0)
 	{
