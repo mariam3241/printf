@@ -25,5 +25,7 @@ int printstr(va_list x);
 int printdeci(va_list x);
 int printint(va_list x);
 int printBinary(va_list x);
+char *copyString(char *dest, char *src);
+int revString(va_list x);
 
 #endif
