@@ -25,10 +25,16 @@ int (*select_format(const char *ptr, int *idx))()
 		{"lo", printLongOctal},
 		{"lx", printLongLoweredHexa},
 		{"lX", printLongUpperedHexa},
-		{"lu", printLongUnsigned}
+		{"lu", printLongUnsigned},
+		{"hd", printShortDecimal},
+		{"hi", printShortInt},
+		{"ho", printShortOctal},
+		{"hx", printShortLoweredHexa},
+		{"hX", printShortUpperedHexa},
+		{"hu", printShortUnsigned}
 	};
 
-	int len = 17;
+	int len = 23;
 	int tmp_idx = *idx;
 	int i;
 

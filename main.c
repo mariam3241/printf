@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    _printf("%ld\n%li\n%lx\n%lX\n%lu\n%lo\n", 98, 9876654, 754, 64, 654, 986);
+    _printf("%hd\n%hi\n%hx\n%hX\n%hu\n%ho\n", 98, 9876654, 754, 64, 654, 986);
     return (0);
 }	
