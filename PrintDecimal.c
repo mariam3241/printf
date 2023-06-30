@@ -50,3 +50,36 @@ int printdeci(va_list x)
 
 	return (k);
 }
+
+
+/**
+ * printUnSigned - prints unsigned
+ * @x: sent para
+ *
+ * Return: k
+ */
+int printUnSigned(va_list x)
+{
+	unsigned int value = va_arg(x, unsigned int);
+	int k = 0;
+	int index = 0;
+	char buffer[32];
+
+
+	if (value == 0)
+	{
+		_putchar('0');
+		k++;
+	}
+	while (value > 0)
+	{
+		buffer[index++] = (value % 10) + '0';
+		value /= 10;
+		k++;
+	}
+	while (index > 0)
+	{
+		_putchar(buffer[--index]);
+	}
+	return (k);
+}
