@@ -19,10 +19,16 @@ int (*select_format(const char *ptr, int *idx))()
 		{"X", printHexaUppered},
 		{"u", printUnSigned},
 		{"o", printOctal},
-		{"R", printrot13}
+		{"R", printrot13},
+		{"ld", printLongDecimal},
+		{"li", printLongInt},
+		{"lo", printLongOctal},
+		{"lx", printLongLoweredHexa},
+		{"lX", printLongUpperedHexa},
+		{"lu", printLongUnsigned}
 	};
 
-	int len = 11;
+	int len = 17;
 	int tmp_idx = *idx;
 	int i;
 

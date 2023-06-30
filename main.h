@@ -32,5 +32,11 @@ int printHexaLowered(va_list x);
 int printHexaUppered(va_list x);
 int printOctal(va_list x);
 int printrot13(va_list x);
+int printLongInt(va_list x);
+int printLongUnsigned(va_list x);
+int printLongUpperedHexa(va_list x);
+int printLongLoweredHexa(va_list x);
+int printLongDecimal(va_list x);
+int printLongOctal(va_list x);
 
 #endif
