@@ -27,5 +27,9 @@ int printint(va_list x);
 int printBinary(va_list x);
 char *copyString(char *dest, char *src);
 int revString(va_list x);
+int printUnSigned(va_list x);
+int printHexaLowered(va_list x);
+int printHexaUppered(va_list x);
+int printOctal(va_list x);
 
 #endif
