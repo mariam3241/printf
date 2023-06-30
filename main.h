@@ -31,5 +31,6 @@ int printUnSigned(va_list x);
 int printHexaLowered(va_list x);
 int printHexaUppered(va_list x);
 int printOctal(va_list x);
+int printrot13(va_list x);
 
 #endif
