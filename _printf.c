@@ -15,10 +15,14 @@ int (*select_format(const char *ptr, int *idx))()
 		{"i", printint},
 		{"b", printBinary},
 		{"r", revString},
+		{"x", printHexaLowered},
+		{"X", printHexaUppered},
+		{"u", printUnSigned},
+		{"o", printOctal},
 		{"R", printrot13}
 	};
 
-	int len = 7;
+	int len = 11;
 	int tmp_idx = *idx;
 	int i;
 
