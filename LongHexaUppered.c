@@ -13,7 +13,7 @@ int printLongUpperedHexa(va_list x)
 	int rem_bit = 0;
 	int k = 0;
 	int index = 0;
-	char hexa[32];
+	char hexa[64];
 	int j = 0;
 
 

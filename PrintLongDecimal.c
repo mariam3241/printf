@@ -63,7 +63,7 @@ int printLongUnsigned(va_list x)
 	unsigned long int value = va_arg(x, unsigned long int);
 	int k = 0;
 	int index = 0;
-	char buffer[32];
+	char buffer[64];
 
 
 	if (value == 0)

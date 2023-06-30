@@ -13,7 +13,7 @@ int printLongOctal(va_list x)
 	int k = 0;
 	unsigned long int n = va_arg(x, int);
 	int rem_bit = 0;
-	char octal[32];
+	char octal[64];
 	int j = 0;
 
 

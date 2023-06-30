@@ -10,7 +10,7 @@ int printLongLoweredHexa(va_list x)
 {
 	unsigned long int decimal = va_arg(x, unsigned long int);
 	int rem_bit = 0;
-	char hexa[32];
+	char hexa[64];
 	int index = 0;
 	int k = 0;
 	int j = 0;
